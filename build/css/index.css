@@ -186,11 +186,15 @@
   color: #fff;
 }
 .page .process-section {
+  height: 16.390625rem;
+}
+.page .process-section .process-content {
+  height: 100%;
   background: url('../../image/section5-bg.png') no-repeat center;
   background-size: cover;
   position: relative;
 }
-.page .process-section .process-title {
+.page .process-section .process-content .process-title {
   font-size: 0.5625rem;
   color: #fff;
   text-align: end;
@@ -198,18 +202,18 @@
   top: 0.78125rem;
   right: 1.25rem;
 }
-.page .process-section .process-title span {
+.page .process-section .process-content .process-title span {
   display: block;
   color: #00FFA8;
 }
-.page .process-section .process-begin {
+.page .process-section .process-content .process-begin {
   font-size: 0.40625rem;
   color: #FEFFFF;
   position: absolute;
   top: 2.921875rem;
   left: 1.25rem;
 }
-.page .process-section .process-end {
+.page .process-section .process-content .process-end {
   width: 1.5625rem;
   font-size: 0.375rem;
   color: #074F36;
@@ -219,7 +223,7 @@
   bottom: 1.71875rem;
   left: 1.015625rem;
 }
-.page .process-section .process-list {
+.page .process-section .process-content .process-list {
   width: 6.171875rem;
   position: absolute;
   top: 5.125rem;
@@ -228,10 +232,10 @@
   font-size: 0.40625rem;
   color: #FFFFFF;
 }
-.page .process-section .process-list .process-item {
+.page .process-section .process-content .process-list .process-item {
   padding-bottom: 0.84375rem;
 }
-.page .process-section .process-list .process-item span {
+.page .process-section .process-content .process-list .process-item span {
   display: block;
   font-weight: 600;
   padding-top: 0.15625rem;
