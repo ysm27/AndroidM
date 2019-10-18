@@ -1,0 +1,455 @@
+@divide: 10;
+@pswWidth: 640;
+@ppr:@divide/@pswWidth * 1rem;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+  width: 641*@ppr;
+  .apply-section{
+    background: url('./../../image/section1-bg.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 48*@ppr;
+    .logo{
+      width: 196*@ppr;
+      height: 84*@ppr;
+      background-color: #35B558;
+      border-bottom-right-radius: 20*@ppr;
+      margin: 0 0 30*@ppr 22*@ppr;
+      .logo-img{
+        height: 47*@ppr;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .brand{
+      width: 374*@ppr;
+      font-size: 24*@ppr;
+      border-top: 1*@ppr solid #fff;
+      border-bottom: 1*@ppr solid #fff;
+      padding: 22*@ppr 10*@ppr;
+      margin: 0 auto 30*@ppr;
+    }
+    .apply-title{
+      font-size: 50*@ppr;
+      font-weight:600;
+      color:rgba(255,255,255,1);
+      text-shadow:0*@ppr 1*@ppr 13*@ppr rgba(0, 0, 0, 0.31);
+      margin-bottom: 100*@ppr;
+    }
+    .input-content{
+      position: relative;
+      .num-input{
+        width:558*@ppr;
+        height:93*@ppr;
+        background:rgba(255,255,255,1);
+        border:2*@ppr solid rgba(231,44,43,1);
+        border-radius:10*@ppr;
+        font-size: 28*@ppr;
+        color: #616161;
+        padding: 32*@ppr 0 32*@ppr 30*@ppr;
+        margin-bottom: 27*@ppr;
+      }
+      .false-num{
+        position: absolute;
+        top: 28*@ppr;
+        right: 73*@ppr;
+        font-size: 24*@ppr;
+        color: #FF0000
+      }
+    }
+    .apply-btn{
+      width:558*@ppr;
+      height:93*@ppr;
+      background:rgba(231,44,43,1);
+      box-shadow:0*@ppr 1*@ppr 13*@ppr 0*@ppr rgba(0, 0, 0, 0.66);
+      border-radius:10*@ppr;
+      color: #fff;
+      font-size: 40*@ppr;
+    }
+  }
+  .advantage-section{
+    height: 567*@ppr;
+    background: url('./../../image/section2-bg.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .engineers-section{
+    background: url('./../../image/section3-bg.jpg') no-repeat center;
+    background-size: cover;
+    .engineers-title{
+      line-height: 60*@ppr;
+      font-size: 36*@ppr;
+      color: #fff;
+      text-align: center;
+      padding: 70*@ppr 0 60*@ppr 0;
+      span{
+        color: #00FFA8;
+      }
+    }
+    .engineers-list{
+      width: 530*@ppr;
+      margin: 0 auto;
+      padding-bottom: 50*@ppr;
+      .engineer-item{
+        display: flex;
+        padding-bottom: 58*@ppr;
+        .engineer-avatar{
+          width: 153*@ppr;
+          height: 153*@ppr;
+          img{
+            width: 153*@ppr;
+          }
+        }
+        .engineer-info{
+          margin-left: 28*@ppr;
+          .engineer-name{
+            font-size: 28*@ppr;
+            color: #fff;
+            margin: 5*@ppr 0 10*@ppr 0;
+            span{
+              display: inline-block;
+              width: 100*@ppr;
+              height: 28*@ppr;
+              border-radius:12*@ppr;
+              background-color: #00FFA8;
+              font-size: 20*@ppr;
+              color: #000;
+              text-align: center;
+              margin-left: 18*@ppr;
+            }
+          }
+          .engineer-description{
+            font-size: 24*@ppr;
+            color: #00FFA8;
+            span{
+              display: block;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tech-section{
+    background-color: #000;    
+    padding-bottom: 33*@ppr;
+    .tech-title{
+      height: 150*@ppr;
+      line-height: 150*@ppr;
+      background-color: #000;
+      font-size: 36*@ppr;
+      color: #fff;
+    }
+    .video{
+      height: 508*@ppr;
+      background: url('./../../image/section4-bg.jpg') no-repeat center;
+      background-size: cover;
+      .play-video{
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .tech-bottom{
+      display: flex;
+      .jiker-logo{
+        width: 189*@ppr;
+        height: 99*@ppr;
+        background-color: #35B558;
+        text-align: center;
+        .logo-img{
+          width: 135*@ppr;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .students-work{
+        width: 452*@ppr;
+        height: 99*@ppr;
+        background-color: #8861B1;
+        font-size: 36*@ppr;
+        color: #43285F;
+        font-weight:600;
+        text-align: center;
+        line-height: 99*@ppr;
+        span{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .process-section{
+    background: url('./../../image/section5-bg.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    .process-title{
+      font-size: 36*@ppr;
+      color: #fff;
+      text-align: end;
+      position: absolute;
+      top: 50*@ppr;
+      right: 80*@ppr;
+      span{
+        display: block;
+        color: #00FFA8;
+      }
+    }
+    .process-begin{
+      font-size: 26*@ppr;
+      color: #FEFFFF;
+      position: absolute;
+      top: 187*@ppr;
+      left: 80*@ppr;
+    }
+    .process-end{
+      width: 100*@ppr;
+      font-size: 24*@ppr;
+      color: #074F36;
+      font-weight:600;
+      text-align: center;
+      position: absolute;
+      bottom: 110*@ppr;
+      left: 65*@ppr;
+    }
+    .process-list{
+      width: 395*@ppr;
+      position: absolute;
+      top: 328*@ppr;
+      left: 200*@ppr;
+      list-style: none;
+      font-size: 26*@ppr;
+      color: #FFFFFF;
+      .process-item{
+        padding-bottom: 54*@ppr;
+        span{
+          display: block;
+          font-weight: 600;
+          padding-top: 10*@ppr;
+        }
+      }
+    }
+  }
+  .enterprise-section{
+    height: 445*@ppr;
+    background: url('./../../image/section6-bg.png') no-repeat;
+    background-size: cover;
+    .enterprise-title{
+      font-size: 34*@ppr;
+      color: #fff;
+      text-align: center;
+      padding-top: 87*@ppr;
+      span{
+        color: #00FFA8;
+      }
+    }
+  }
+  .intro-section{
+    background-color: #1F1F34;
+    padding-bottom: 20*@ppr;
+    .intro-title{
+      font-size: 36*@ppr;
+      color: #00FFA8;
+      text-align: center;
+      padding:  74*@ppr 0 17*@ppr;
+    }
+    .sub-title{
+      width: 513*@ppr;
+      font-size: 26*@ppr;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 66*@ppr;
+      color: #fff;
+      .color-logo{
+        width: 106*@ppr;
+      }
+    }
+    .content-list{
+      display: flex;
+      width:  550*@ppr;
+      justify-content: space-between;
+      margin: 66*@ppr auto 71*@ppr;
+      list-style: none;
+      .content-item{
+        width: 165*@ppr;
+        text-align: center;
+        .content-img{
+          margin-bottom: 48*@ppr;
+        }
+        .content-description{
+          font-size: 27*@ppr;
+          color: #fff;
+          span{
+            font-size: 46*@ppr;
+          }
+        }
+      }
+    }
+    .reward-title{
+      font-size: 28*@ppr;
+      color: #00FFA8;
+      text-align: center;
+      margin-bottom: 45*@ppr;
+    }
+    .reward-list{
+      width: 550*@ppr;
+      margin: 0 44*@ppr 0 47*@ppr;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: space-between;
+      padding-bottom: 46*@ppr;
+      .reward-item{
+        width: 258*@ppr;
+        text-align: center;
+        .reward-img{
+          width: 258*@ppr;
+        }
+        .reward-description{
+          width: 220*@ppr;
+          font-size: 24*@ppr;
+          color: #fff;
+          margin: 12*@ppr auto 21*@ppr;
+        }
+      }
+    }
+  }
+  .sign-up-section{
+    height: 157*@ppr;
+    background-color: rgba(240,51,0,1);
+    .sign-up-now{
+      width: 560*@ppr;
+      height: 81*@ppr;
+      background-color: #EF741A;
+      box-shadow:0*@ppr 3*@ppr 9*@ppr 0*@ppr rgba(203,44,1,0.49);
+      font-size: 36*@ppr;
+      color: #fff;
+      text-align: center;
+      line-height: 81*@ppr;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.success-page{
+  display: none;
+  .submit-section{
+    height: 9.15625rem;
+    background: url('./../../image/success-page-bg.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    .logo{
+      width: 196*@ppr;
+      height: 84*@ppr;
+      background-color: #35B558;
+      border-bottom-right-radius: 20*@ppr;
+      margin: 0 0 30*@ppr 22*@ppr;
+      .logo-img{
+        height: 47*@ppr;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .submit-title{
+      font-size: 0.625rem;
+      color: #3ae268;
+      margin: 185*@ppr 0 6*@ppr;
+    }
+    .title-description{
+      font-size: 0.4375rem;
+      color: #fff;
+    }
+    .sign-up{
+      width: 8.75rem;
+      height: 1.40625rem;
+      background-color: #e72c2b;
+      font-size: 0.625rem;
+      color: #fff;
+      text-align: center;
+      line-height: 1.40625rem;
+      margin: 60*@ppr auto 0; 
+      border-radius: 0.15625rem;
+    }
+  }
+  .students-section{
+    height: 16.71875rem;
+    background: url('./../../image/success-page-bg2.jpg') no-repeat center;
+    background-size: cover;
+    .student-title{
+      width: 500*@ppr;
+      height: 3.75rem;
+      font-size: 0.5625rem;
+      color: #fff;
+      margin: 0 auto;
+      padding-top: 65*@ppr;
+      text-align: center;
+      span{
+        color: #3cb45d;
+      }
+    }
+    .students-list{
+      width: 530*@ppr;
+      margin: 0 auto;
+      .student-item{
+        display: flex;
+        padding-bottom: 58*@ppr;
+        .student-avatar{
+          height: 2.40625rem;
+          width: 2.40625rem;
+          img{
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .student-info{
+          margin-left: 28*@ppr;
+          .student-name{
+            font-size: 28*@ppr;
+            color: #fff;
+            margin: 5*@ppr 0 10*@ppr 0;
+          }
+          .student-description{
+            font-size: 24*@ppr;
+            color: #00FFA8;
+            span{
+              display: block;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .learn-more{
+      width: 8.75rem;
+      height: 1.40625rem;
+      background-color: #e72c2b;
+      font-size: 0.625rem;
+      color: #fff;
+      text-align: center;
+      line-height: 1.40625rem;
+      margin: 0 auto 0; 
+      border-radius: 0.15625rem;
+      padding-bottom: 50*@ppr;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
